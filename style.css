@@ -138,8 +138,12 @@ img {
 
 @media (max-width:992px) {
 
-    .banner h2 {
+    .container {
         /*banner*/
+        margin: 0 20px;
+    }
+
+    .banner h2 {
         font-size: 50px;
         font-weight: 600;
         line-height: 50px;
@@ -171,17 +175,30 @@ img {
 
 /* responsive - mobile */
 
-@media (max-width:768px){
-    .banner{ /*banner*/
+@media (max-width:768px) {
+
+    .container {
+        /*banner*/
+        margin: 0 10px;
+    }
+
+    .banner {
         flex-direction: column;
         text-align: center;
     }
-    .banner .banner-left{
+
+    .banner .banner-left {
         margin-bottom: 50px;
         padding-left: 0;
         padding-top: 20px;
     }
-    .banner .banner-left p{
-        margin: 15px auto; /*max-width:100% diyeo possible*/
+
+    .banner .banner-left p {
+        margin: 15px auto;
+        /*max-width:100% diyeo possible*/
+    }
+
+    .u-m-right {
+        grid-template-columns: 1fr;
     }
 }
