@@ -26,6 +26,42 @@ img {
     /*because of image overlflow*/
 }
 
+/* animation */
+
+@keyframes banner-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes banner-player-animation {
+    0% {
+        opacity: 0.5;
+        transform: translateX(-20px);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 /* banner */
 
 .banner {
@@ -35,6 +71,7 @@ img {
     color: white;
     border-radius: 15px;
     margin: 50px auto;
+    animation: banner-animation 0.7s ease-out forwards;
 }
 
 .banner-left {
@@ -56,12 +93,13 @@ img {
     /*banner-left er width er 65% hoise*/
 }
 
-.banner-roght {
+.banner-right {
     flex: 1;
 }
 
 .banner-right img {
     display: block;
+    animation: banner-player-animation 1s ease-in forwards;
 }
 
 /* upcoming matches */
@@ -70,6 +108,7 @@ img {
     display: flex;
     padding: 50px 0;
     gap: 20px;
+    animation: banner-animation 0.7s ease-out reverse;
 }
 
 .u-m-left {
